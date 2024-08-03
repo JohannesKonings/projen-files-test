@@ -5,6 +5,7 @@
     ".projen/deps.json",
     ".projen/files.json",
     ".projen/tasks.json",
+    ".projen/tree.json",
     "foo1.json",
     "foo2.json"
   ],

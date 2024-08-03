@@ -24,6 +24,14 @@
         }
       ]
     },
+    "cleanup-readonly-false": {
+      "name": "cleanup-readonly-false",
+      "steps": [
+        {
+          "exec": "./cleanup-non-readonly-files.sh"
+        }
+      ]
+    },
     "compile": {
       "name": "compile",
       "description": "Only compile"
@@ -32,6 +40,9 @@
       "name": "default",
       "description": "Synthesize project files",
       "steps": [
+        {
+          "spawn": "cleanup-readonly-false"
+        },
         {
           "exec": "npx tsx .projenrc.ts"
         }

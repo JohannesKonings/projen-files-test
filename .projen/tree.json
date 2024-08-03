@@ -1,0 +1,115 @@
+{
+  "//": "Experimental. Expect frequent changes to the structure of this file.",
+  "Project#my-project@<root>": {
+    "metadata": {
+      "type": "project",
+      "construct": "Project"
+    },
+    "nodes": {
+      "GitAttributesFile@.gitattributes": {
+        "metadata": {
+          "type": "file",
+          "construct": "GitAttributesFile",
+          "path": ".gitattributes"
+        }
+      },
+      "IgnoreFile@.gitignore": {
+        "metadata": {
+          "type": "file",
+          "construct": "IgnoreFile",
+          "path": ".gitignore"
+        }
+      },
+      "Tasks#AutoId1": {
+        "metadata": {
+          "type": "component",
+          "construct": "Tasks"
+        }
+      },
+      "JsonFile@.projen--tasks.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": ".projen/tasks.json"
+        }
+      },
+      "ProjectBuild#AutoId2": {
+        "metadata": {
+          "type": "component",
+          "construct": "ProjectBuild"
+        }
+      },
+      "Dependencies#AutoId3": {
+        "metadata": {
+          "type": "component",
+          "construct": "Dependencies"
+        }
+      },
+      "JsonFile@.projen--deps.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": ".projen/deps.json"
+        }
+      },
+      "Logger#my-project": {
+        "metadata": {
+          "type": "component",
+          "construct": "Logger"
+        }
+      },
+      "JsonFile@.projen--files.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": ".projen/files.json"
+        }
+      },
+      "JsonFile@foo1.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": "foo1.json",
+          "readonly": true
+        }
+      },
+      "JsonFile@foo2.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": "foo2.json",
+          "readonly": true
+        }
+      },
+      "JsonFile@foo3.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": "foo3.json",
+          "readonly": false
+        }
+      },
+      "JsonFile@foo4.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": "foo4.json",
+          "readonly": false
+        }
+      },
+      "ProjectTree": {
+        "metadata": {
+          "type": "component",
+          "construct": "ProjectTree"
+        }
+      },
+      "JsonFile@.projen--tree.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": ".projen/tree.json"
+        }
+      }
+    }
+  }
+}
