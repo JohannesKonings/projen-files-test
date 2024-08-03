@@ -10,14 +10,16 @@
         "metadata": {
           "type": "file",
           "construct": "GitAttributesFile",
-          "path": ".gitattributes"
+          "path": ".gitattributes",
+          "readonly": true
         }
       },
       "IgnoreFile@.gitignore": {
         "metadata": {
           "type": "file",
           "construct": "IgnoreFile",
-          "path": ".gitignore"
+          "path": ".gitignore",
+          "readonly": true
         }
       },
       "Tasks#AutoId1": {
@@ -30,7 +32,8 @@
         "metadata": {
           "type": "file",
           "construct": "JsonFile",
-          "path": ".projen/tasks.json"
+          "path": ".projen/tasks.json",
+          "readonly": true
         }
       },
       "ProjectBuild#AutoId2": {
@@ -49,7 +52,8 @@
         "metadata": {
           "type": "file",
           "construct": "JsonFile",
-          "path": ".projen/deps.json"
+          "path": ".projen/deps.json",
+          "readonly": true
         }
       },
       "Logger#my-project": {
@@ -62,7 +66,8 @@
         "metadata": {
           "type": "file",
           "construct": "JsonFile",
-          "path": ".projen/files.json"
+          "path": ".projen/files.json",
+          "readonly": true
         }
       },
       "JsonFile@foo1.json": {
@@ -95,6 +100,20 @@
           "construct": "JsonFile",
           "path": "foo4.json",
           "readonly": false
+        }
+      },
+      "JsonFile@folder--foo5.json": {
+        "metadata": {
+          "type": "file",
+          "construct": "JsonFile",
+          "path": "folder/foo5.json",
+          "readonly": false
+        }
+      },
+      "ComponentCleanupReadonlyFalse#AutoId4": {
+        "metadata": {
+          "type": "component",
+          "construct": "ComponentCleanupReadonlyFalse"
         }
       },
       "ProjectTree": {

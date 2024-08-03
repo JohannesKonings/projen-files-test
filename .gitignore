@@ -8,4 +8,5 @@ node_modules/
 !/foo2.json
 !/foo3.json
 !/foo4.json
+!/folder/foo5.json
 !/.projen/tree.json
