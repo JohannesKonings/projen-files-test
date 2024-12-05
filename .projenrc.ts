@@ -1,4 +1,4 @@
-import { JsonFile, Project, ProjectTree } from "projen";
+import { DependencyType, JsonFile, Project, ProjectTree } from "projen";
 import { ComponentCleanupReadonlyFalse } from "./componentCleanupReadonlyFalse";
 
 const project = new Project({
@@ -54,5 +54,9 @@ new ComponentCleanupReadonlyFalse(project);
 // project.defaultTask?.prependSpawn(taskCleanupReadonlyFalse);
 
 new ProjectTree(project);
+
+project.deps.addDependency("axios", DependencyType.RUNTIME, {
+  reason: "we need axios for making http requests",
+});
 
 project.synth();
